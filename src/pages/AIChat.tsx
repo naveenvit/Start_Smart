@@ -178,35 +178,6 @@ export const AIChat: React.FC = () => {
           </form>
         </div>
       </motion.div>
-
-      {/* Suggested Questions */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        className="mt-6 bg-white rounded-lg shadow-md p-6"
-      >
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">Suggested Questions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {[
-            "How do I validate my startup idea?",
-            "What revenue model should I choose?",
-            "How do I identify my competitors?",
-            "What should I include in my pitch?",
-            "How do I define my target customer?",
-            "What are the key metrics to track?",
-          ].map((question, index) => (
-            <motion.button
-              key={index}
-              whileHover={{ scale: 1.02 }}
-              onClick={() => setNewMessage(question)}
-              className="text-left p-3 border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-colors"
-            >
-              <p className="text-sm text-gray-700">{question}</p>
-            </motion.button>
-          ))}
-        </div>
-      </motion.div>
     </div>
   );
 };
