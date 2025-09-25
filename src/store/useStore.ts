@@ -103,7 +103,7 @@ export const useStore = create<AppState>((set, get) => ({
   currentUser: {
     id: 'user-1',
     name: 'John Doe',
-    tokens: 100,
+    tokens: 1000,
     ideas: [],
     investments: [],
   },
